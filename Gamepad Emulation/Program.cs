@@ -58,7 +58,7 @@ static class Program
 			if (pauseIndex >= 0 && pauseIndex + 1 < args.Length) 
 				int.TryParse(args[pauseIndex + 1], out pause);
 
-			//: Simultaniusly press all buttons in args, than release them
+			//: Simultaniusly press all buttons in args, then release them
 			Thread.Sleep(pause);
 			foreach (var buttonName in args)
 			{
