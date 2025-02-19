@@ -30,13 +30,13 @@ static class Program
 	{
 #if DEBUG
 		//: log args
-		File.AppendAllText("log.txt",Environment.NewLine + string.Join(" ", args));
+		File.AppendAllText("log.txt",Environment.NewLine + "args:" + string.Join(" ", args));
 #endif
 		try
 		{
 			if (args.Length == 0)
 			{
-				Console.WriteLine("Ошибка: не указана кнопка. Использование: ViGEmEmulator.exe <КНОПКА>");
+				File.AppendAllText("log.txt", Environment.NewLine + $"{DateTime.Now.ToString(CultureInfo.CurrentCulture)} Error: no arguments");
 				return;
 			}
 			//: default values
