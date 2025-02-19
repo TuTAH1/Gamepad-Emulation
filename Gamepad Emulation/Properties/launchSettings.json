@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Gamepad Emulation": {
+      "commandName": "Project",
+      "commandLineArgs": "lb -d 110"
+    }
+  }
+}
